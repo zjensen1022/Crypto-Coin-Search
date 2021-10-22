@@ -1,0 +1,143 @@
+body {
+    font-family: 'Kalam', cursive;
+}
+
+h2 {
+    text-align: center;
+    margin: 5px auto;
+}
+
+p {
+    font-size: large;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+input {
+    width: 320px;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+}
+
+main {
+    text-align: center;
+    font-family: 'Gill Sans';
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    display: block;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+.centered {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.gain {
+    color: green;
+}
+
+.loss {
+    color: red;
+}
+
+#search_container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#display_container {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px auto;
+    width: 500px;
+    text-align: left;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+}
